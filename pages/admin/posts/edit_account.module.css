@@ -1,0 +1,378 @@
+/* edit_account.module.css */
+
+/* Add general styles for the form */
+.form-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Add styles for the buttons */
+.button-container {
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Add styles for the table */
+/* edit_account.module.css */
+
+/* Add styles for the table */
+.myTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.myTable th, .myTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.myTable th {
+  background-color: #f2f2f2;
+}
+
+/* Add styles for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Add styles for the search and rows per page sections */
+
+.topTable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchContainer,
+.rowsPerPageContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Optional: Adjust margin or padding for spacing */
+.searchContainer {
+  margin-right: 10px;
+}
+.searchContainer input {
+  width: 200px; /* Adjust the width as needed */
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px; /* Adjust the margin between input and button */
+}
+.searchContainer button {
+  padding: 10px 15px; /* Adjust padding as needed */
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black; /* Adjust the background color */
+  color: #fff; /* Adjust the text color */
+  border: none;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+.searchContainer button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
+
+/* Add styles for the rows per page container */
+
+.rowsPerPageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.rows-per-page-container {
+  margin-bottom: 20px;
+}
+
+.rows-per-page-container label {
+  margin-right: 10px;
+}
+
+.rowsPerPageContainer select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.rowsPerPageContainer select::-ms-expand,
+.rowsPerPageContainer select::-webkit-expand {
+  display: none;
+}
+
+.rowsPerPageContainer select:hover {
+  border-color: black; /* Adjust the border color on hover */
+}
+.rowsPerPageContainer select:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: 0 0 5px black; /* Add a subtle shadow on focus */
+}
+
+/* Add styles for the pagination container */
+.pagination {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.pagination button {
+  padding: 0px 13px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-right: 5px;
+  height: 35px;
+  width: 85px;
+}
+
+/* Add styles for disabled buttons */
+.pagination button:disabled {
+  background-color: #ccc; /* Adjust the background color for disabled state */
+  color: #666; /* Adjust the text color for disabled state */
+  cursor: not-allowed;
+}
+
+/* Add hover effect for the buttons */
+.pagination button:hover:not([disabled]) {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.pagination span {
+  margin: 0 5px; /* Adjust the margin around the page number */
+  font-size: 16px;
+}
+
+
+
+
+/* Add your custom styles as needed */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form input,
+.form select,
+.form textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.form button[type="submit"] {
+  margin-right: 10px;
+}
+
+.form button[type="button"] {
+  background-color: #ccc;
+}
+
+/* Optional: Add hover effect for buttons */
+.form button:hover {
+  background-color: #0056b3;
+}
+
+.form button[type="button"]:hover {
+  background-color: #999;
+}
+
+/* Assuming your existing styles are in the "edit_account.module.css" file */
+
+/* edit_account.module.css */
+/* Assuming your existing styles are in the "edit_account.module.css" file */
+
+/* edit_account.module.css */
+
+/* Add styles for the modal */
+.editUserModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add styles for the form inside the modal */
+.editUserForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Add styles for labels */
+.editUserForm label {
+  font-weight: bold;
+}
+
+/* Add styles for inputs and selects */
+.editUserForm input,
+.editUserForm select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Add styles for the submit button */
+.editUserForm button[type="submit"] {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Add hover effect for the submit button */
+.editUserForm button[type="submit"]:hover {
+  background-color: black;
+}
+
+/* Add styles for the cancel button */
+.editUserForm button[type="button"] {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ccc;
+  color: #666;
+  border: none;
+  border-radius: 4px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+
+/* Add hover effect for the cancel button */
+.editUserForm button[type="button"]:hover {
+  background-color: #bbb;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+
+
+/* .confirmationBox { */
+.confirmationBox {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.buttonContainer button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.buttonContainer button:first-child {
+  background-color: #ddd;
+}
+
+.buttonContainer button:last-child {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.confirmationBoxContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; /* Ensure it's on top of other elements */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(5px);
+}

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css');
+
+:root {
+  --bg: #242526;
+  --bg-accent: #484a4d;
+  --text-color: #dadce1;
+  --nav-size: 60px;
+  --border: 1px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.multiSelectContainer .searchWrapper input.searchBox {
+  border-radius: 5px;
+}
+
+.multiSelectContainer .optionListContainer {
+  width: 50%;
+}
+.filter .multiSelectContainer .optionListContainer {
+  width: 80%;
+}
+.multiSelectContainer .optionListContainer .optionContainer li.option.highlightOption {
+  background-color: #fff !important;
+  color: black;
+}
+
+.multiSelectContainer .optionListContainer .optionContainer li.option {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.multiSelectContainer .optionListContainer .optionContainer li.option:hover {
+  background-color: #f3f3f3 !important;
+  color: #2f3ab2;
+  font-weight: 500;
+}
+
+/* CSSTransition classes  */
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+
+.menu-primary-exit {
+  position: absolute;
+}
+
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+}
+
+
+.menu-secondary-enter {
+  transform: translateX(110%);
+}
+
+.menu-secondary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+}
+
+.menu-secondary-exit-active {
+  transform: translateX(110%);
+  transition: all var(--speed) ease;
+}
+
+.editor-preview {
+  background: #fff !important;
+}
+
+.wmde-markdown>p>img {
+  width: auto !important;
+  margin: auto !important;
+  border-radius: 5px;
+}
+
+.editor-toolbar {
+  text-align: center !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none !important;
+  background-color: #cecece20 !important;
+}
+
+.EasyMDEContainer .CodeMirror {
+  border: none !important;
+  padding: 10px 0;
+}
+
+.dark .EasyMDEContainer .CodeMirror {
+  background: #475569;
+  color: #ffffff;
+}
+.comment-form .EasyMDEContainer {
+  background-color: #ffff;
+}
+
+.comment-form .editor-toolbar {
+  text-align: left !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none !important;
+  background-color: #cecece20 !important;
+}
+
+.comment-form .EasyMDEContainer .CodeMirror {
+  border: none !important;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+
+.title-input {
+  resize: none;
+  white-space: pre-wrap;
+}
+
+.wmde-markdown {
+  font-size: 18px;
+}
+
+.wmde-markdown {
+  font-size: 16px !important;
+  color: black !important;
+  background-color: transparent !important;
+}
+.wmde-markdown table {
+  background-color: white !important;
+  font-size: 16px !important;
+  color: black !important;
+
+}
+.wmde-markdown table tr {
+  background-color: white;
+  border-top: 1px solid var(--color-border-muted);
+}
+.wmde-markdown table tr:nth-child(2n) {
+  background-color: rgb(227, 225, 225);
+}
+.dark .post-details .wmde-markdown {
+  color: #ffff;
+}
+
+.cut-text {
+  line-height: 1.6rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 3.2rem;
+}
+.cut-text-reply{
+  line-height: 1.6rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 4rem;
+}
+.textarea-auto-resize{
+  resize: none;
+  overflow: hidden;
+  min-height: 30px;
+}
+.border-indigo-600{
+  border-color: black !important;
+}
+.bg-indigo-600 {
+  background-color: black !important;
+}
+.bg-indigo-400 {
+
+  background-color: rgba(63, 63, 63, 0.797);
+}
+.bg-indigo-500 {
+  background-color: black;
+}
+.author{
+  margin: 15px 20px 0;
+}
+.py-24 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.react-confirm-alert-button-group{
+  justify-content: center !important;
+}
+.react-confirm-alert-body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 500px !important;
+  padding: 30px;
+  text-align: center !important;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+  color: red !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.react-confirm-alert-button-group > button {
+  padding: 8px 44px !important;
+}
